@@ -1,0 +1,32 @@
+Wjezdza, bierze bilet, jezeli nie ma miejsca zwraca informacje, przy opuszczeniu oddaje bilet ktory weryfikuje czas, jezeli za dluugo to nalicza oplate.
+
+Czynnosci:
+-biletomat wydaje bilet z wybranym czasem postoju jeżeli znajduje się co najmniej jedno miejsce parkingowe
+-system dopisuje to jako nowy samochód i uaktualnia liczbę miejsc
+-podczas opuszczania system sprawdza czy długość postoju odpowiadała temu zapisanemu na bilecie
+-w przypadku przekroczenia czasu nie otwiera bramy do momentu uiszczenia opłaty zależnej od przekroczonego czasu postoju
+-po wyjeździe samochodu w systemie zwalnia się miejsce parkingowe
+
+Wymagania funkcjonalne:
+-System musi poprawnie wystawiać oraz odczytywać dane zapisane na biletach
+-System musi sprawiedliwie obliczać oraz przyjmować opłatę za przekroczenie czasu postoju
+-System powinien poprawnie zwracać liczbę samochodów znajdujących się na parkingu
+
+Wymagania jakościowe:
+-System powinien powiadomić o karze w przypadku przekroczenia czasu postoju
+-System musi umożliwić kupno biletu na określony przez klienta czas
+-System musi być dostępny dla klientów całodobowo
+-Dopuszcza się maksymalnie 2 awarię biletomatów (trwające dłużej niż 20min) na rok
+
+Ograniczenia:
+-Biletomaty zintegrowane z odpowiednim systemem obsługi klientów
+-System jest w stanie działać bez ingerencji pracowników
+
+
+Aktorzy:
+Klient = osoba która chce skorzystać z usług parkingu
+
+Administrator = szczególny rodzaj użytkownika który jest w stanie administrować systemem
+
+Nadzorca = sczególny rodzaj użytkownika który może operować systemem
+
